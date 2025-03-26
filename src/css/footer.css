@@ -1,3 +1,164 @@
-/* Стас Привет смотри там у тебя футер шире чем ширbна всего основного контейнера не забудь,
-     наименование класов тоже соблюдай
-     и у тебя там свои марджины везде в футере*/
+:root {
+  --main: #0c0c0c;
+  --accent: #3350e9;
+  --background: #fbfbfb;
+  --cards: #f3f3f3;
+}
+:root {
+  --font-family: 'Gilroy', sans-serif;
+}
+
+/* #region Footer */
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 28px 28px 28px;
+  border-radius: 30px;
+  height: 581px;
+  background: var(--main);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 704px;
+    width: 100%;
+    height: 540px;
+    padding: 40px 40px 28px 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    max-width: 1216px;
+    height: 400px;
+    width: 100%;
+  }
+}
+
+.footer-logo-icon-wrapper {
+  width: 122px;
+  height: 73px;
+  margin-bottom: 20px;
+}
+.footer-logo {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--background);
+  margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-icon {
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  fill: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-svg-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.footer-tel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--background);
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 16px;
+  width: 152px;
+  height: 44px;
+  margin-bottom: 40px;
+}
+.footer-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--background);
+  margin-bottom: 92px;
+  width: 279px;
+}
+.footer-nav-address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 279px;
+  height: 64px;
+  margin-bottom: 48px;
+}
+.footer-nav {
+  display: flex;
+  column-gap: 16px;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  width: 147px;
+}
+.footer-nav-li {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33333;
+  text-align: center;
+  color: var(--background);
+}
+.footer-address {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--background);
+  width: 83px;
+}
+.footer-copy-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.footer-copy {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+}
+.footer-links-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+}
+
+.footer-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+/* #endregion Footer */
