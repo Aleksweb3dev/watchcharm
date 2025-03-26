@@ -1,0 +1,307 @@
+.sale-section {
+    padding: 30px 0;
+}
+
+@media screen and (min-width:768px) {
+    .sale-section {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-section {
+        padding: 50px 0;
+    }
+}
+
+.sale-container {
+    max-width: 375px;
+    padding: 0 20px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-container {
+        max-width: 1280px;
+        padding: 0 65px;
+    }
+}
+
+.sale-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-main);
+    margin-bottom: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-title {
+        font-size: 48px;
+        line-height: 0.92;
+        margin-bottom: 40px;
+    }
+}
+
+.sale-products-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-products-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-products-wrapper {
+        margin-bottom: 0;
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+}
+
+.sale-products-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-products-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-products-list {
+        flex-shrink: 0;
+    }
+}
+
+.sale-products-list-item {
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 16px;
+    padding: 14px 13px;
+    overflow: hidden;
+    background-color: var(--color-cards);
+}
+
+@media screen and (min-width:768px) {
+    .sale-products-list-item {
+        border-radius: 20px;
+        padding: 16px 18px;
+    }
+}
+
+.sale-products-list-img {
+    width: 52px;
+    height: 54px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (min-width:768px) {
+    .sale-products-list-img {
+        width: 96px;
+        height: 100px;
+    }
+}
+
+.sale-product-rotate-wrapper {
+    padding: 50px 50px;
+    border: 1px solid rgba(12, 12, 12, 0.05);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-cards);
+}
+
+@media screen and (min-width:768px) {
+    .sale-product-rotate-wrapper {
+        padding: 80px 112px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-product-rotate-wrapper {
+        padding: 80px 50px;
+        border-radius: 50px;
+        flex-shrink: 0;
+    }
+}
+
+.sale-product-rotate-img {
+    width: 235px;
+    height: 285px;
+    object-fit: cover;
+    transition: transform 333ms ease-in-out;
+    mix-blend-mode: multiply;
+}
+
+@media screen and (min-width:768px) {
+    .sale-product-rotate-img {
+        width: 328px;
+        height: 398px;
+    }
+}
+
+.sale-product-rotate-wrapper:hover,
+.sale-product-rotate-wrapper:focus {
+    transform: rotate(-180deg);
+}
+
+.sale-promotion-card-wrapper {
+    background-color: var(--color-accent);
+    padding: 48px 28px;
+    border-radius: 30px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-wrapper {
+        padding: 60px 60px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .sale-promotion-card-wrapper {
+        border-radius: 50px;
+        margin-left: 20px;
+    }
+}
+
+.sale-promotion-card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: var(--color-background);
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-title {
+        font-size: 32px;
+        line-height: 1.13;
+        max-width: 436px;
+    }
+}
+
+.sale-promotion-card-nr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: rgba(251, 251, 251, 0.5);
+    margin-bottom: 20px;
+}
+
+.sale-promotion-card-price-list {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 9px;
+    margin-bottom: 28px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-price-list {
+        margin-bottom: 30px;
+    }
+}
+
+.sale-promotion-card-actual-price {
+    background-color: rgba(251, 251, 251, 0.1);
+    border-radius: 8px;
+    color: var(--color-background);
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-actual-price {
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+.sale-promotion-card-previous-price {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    text-decoration: line-through;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.sale-promotion-description-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    max-height: 161px;
+    color: rgba(251, 251, 251, 0.7);
+    margin-bottom: 28px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-description-text {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 40px;
+    }
+}
+
+.sale-promotion-card-tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-tags-list {
+        max-width: 398px;
+    }
+}
+
+.sale-promotion-card-tags-list-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33333;
+    color: var(--color-background);
+    border: 1px solid rgba(251, 251, 251, 0.2);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+@media screen and (min-width:768px) {
+    .sale-promotion-card-tags-list-item {
+        font-size: 14px;
+        line-height: 1.29;
+    }
+}
