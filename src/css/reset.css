@@ -58,3 +58,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Плавний скрол */
+html {
+  scroll-behavior: smooth;
+}
