@@ -84,8 +84,6 @@
   }
 }
 
-.product-card {
-}
 .catalog-wrapper-photo {
   display: flex;
   justify-content: center;
@@ -106,8 +104,7 @@
     height: 312px;
   }
 }
-.catalog-list-about-item {
-}
+
 .catalog-title {
   font-weight: 500;
   font-size: 16px;
