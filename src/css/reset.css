@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
